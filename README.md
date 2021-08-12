@@ -32,13 +32,13 @@ Then type "git commit -m "message". In the message, write the author(etAl)_year_
 
 (7) 
 
-Type "git pull origin master" and hit Enter.
+Type "git pull origin main" and hit Enter.
  
 The most commonly forgotten step, and perhaps the most important, is to pull from the original working directory. This is so that in the unlikely chance someone has made changes in the time that you are modifying the document, you will be updating the most recent document.
    
 (8)
 
-Type "git push origin master" and hit Enter.
+Type "git push origin main" and hit Enter.
 
 
    
