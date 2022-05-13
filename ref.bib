@@ -7542,6 +7542,35 @@ archivePrefix = "arXiv",
   publisher={IEEE}
 }
 
+@article{Lin:2020,
+title = {An efficient and accurate MPI-based parallel simulator for streamer discharges in three dimensions},
+journal = jcp,
+volume = {401},
+pages = {109026},
+year = {2020},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2019.109026},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999119307326},
+author = {Bo Lin and Chijie Zhuang and Zhenning Cai and Rong Zeng and Weizhu Bao},
+keywords = {Parallel simulator, Streamer discharge, Three-dimensional simulation, Geometric multigrid, Semi-implicit scheme, MPI},
+abstract = {In this paper, we propose an efficient and accurate message-passing interface (MPI)-based parallel simulator for streamer discharges in three dimensions using the fluid model. First, we propose a new second-order semi-implicit scheme for the temporal discretization of the model that relaxes the dielectric relaxation time restriction. Moreover, it requires solving the Poisson-type equation only once at each time step, while the classical second-order explicit schemes typically need to do twice. Second, we introduce a geometric multigrid preconditioned FGMRES solver that dramatically improves the efficiency of solving the Poisson-type equation with either constant or variable coefficients. We show numerically that no more than 4 iterations are required for the Poisson solver to converge to a relative residual of 10−8 during streamer simulations; the FGMRES solver is much faster than R&B SOR and other Krylov subspace solvers. Last but not least, all the methods are implemented using MPI. The parallel efficiency of the code and the fast algorithmic performances are demonstrated by a series of numerical experiments using up to 2560 cores on the Tianhe2-JK clusters. For applications, we study a double-headed streamer discharge as well as the interaction between two streamers, using up to 10.7 billion mesh cells.}
+}
+
+@article{Lin:2020a,
+	doi = {10.1088/1361-6595/abc6f5},
+	url = {https://doi.org/10.1088/1361-6595/abc6f5},
+	year = 2020,
+	month = {dec},
+	publisher = {{IOP} Publishing},
+	volume = {29},
+	number = {12},
+	pages = {125010},
+	author = {Bo Lin and Chijie Zhuang and Zhenning Cai and Rong Zeng and Weizhu Bao},
+	title = {Accurate and efficient calculation of photoionization in streamer discharges using fast multipole method},
+	journal = psst,
+	abstract = {This paper focuses on the three-dimensional simulation of the photoionization in streamer discharges, and provides a general framework to efficiently and accurately calculate the photoionization model using the integral form. The simulation is based on the kernel-independent fast multipole method (FMM). The accuracy of this method is studied quantitatively for different domains and various pressures in comparison with other existing models based on partial differential equations (PDEs). The comparison indicates the numerical error of the FMM is much smaller than those of other PDE-based methods, with the reference solution given by direct numerical integration. Such accuracy can be achieved with affordable computational cost, and its performance in both efficiency and accuracy is quite stable for different domains and pressures. Meanwhile, the simulation accelerated by the FMM exhibits good scalability using up to 1280 cores, which shows its capability of three-dimensional simulations using parallel (distributed) computing. The difference of the proposed method and other efficient approximations are also studied in a three-dimensional dynamic problem where two streamers interact.}
+}
+
 @inproceedings{Lind:2013,
   title={Radio array of portable interferometric detectors ({RAPID})},
   author={Lind, Frank D and Lonsdale, Colin J and Faulkner, Andrew J and Alexander, Paul and Mattmann, Chris},
@@ -15481,6 +15510,20 @@ YEAR = "1993",
 VOLUME = "26",
 PAGES = "753--759",
 DOI = "10.1088/0022-3727/26/5/006"
+}
+
+@ARTICLE{Ventzek:1994,
+       author = {{Ventzek}, Peter L.~G. and {Hoekstra}, Robert J. and {Kushner}, Mark J.},
+        title = "{Two-dimensional modeling of high plasma density inductively coupled sources for materials processing}",
+      journal = "J. Vac. Sci. Technol. B",
+         year = 1994,
+        month = jan,
+       volume = {12},
+       number = {1},
+        pages = {461-477},
+          doi = {10.1116/1.587101},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/1994JVSTB..12..461V},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
 @ARTICLE{Veronis:1999,
